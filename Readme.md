@@ -1,6 +1,10 @@
-<img src="imagens/Icones/_C__Users_sabri_OneDrive_%C3%81rea%20de%20Trabalho_Estudos_html-css_Praticar_site-cubo-magico_index.html (1).png">
+<img src="imagens/Icones/_C__Users_sabri_OneDrive_%C3%81rea%20de%20Trabalho_Estudos_html-css_Praticar_site-cubo-magico_index.html (1).png" alt="imagem do site">
 <h1>Descrição</h1>
-<p>Um jogo que irá melhorar o seu raciocínio lógico e potencializar a sua concentração. Projeto seguindo o tutorial da Landing page da Rafaella Ballerini.</p>
+<ul>
+    <li>
+        Um jogo que irá melhorar o seu raciocínio lógico e potencializar a sua concentração. Projeto seguindo o tutorial da Landing page da Rafaella Ballerini.
+    </li>
+</ul>
 <h1>Status</h1>
 <ul>
   <li>Finalizado.</li>
