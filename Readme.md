@@ -1,4 +1,4 @@
-<img src="imagens/Icones/_C__Users_sabri_OneDrive_%C3%81rea%20de%20Trabalho_Estudos_html-css_Praticar_site-cubo-magico_index.html (1).png" alt="imagem do site">
+![_C__Users_sabri_OneDrive_%C3%81rea%20de%20Trabalho_Estudos_html-css_Praticar_site-cubo-magico_index html (1)](https://user-images.githubusercontent.com/88604193/148663057-129cb609-3b6b-44ad-a468-98c03a0d379f.png)
 <h1>Descrição</h1>
 <ul>
     <li>
