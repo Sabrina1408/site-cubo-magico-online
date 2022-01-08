@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rock+Salt&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+   min-height: 100%; 
+}
+
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #5e5958 85.61%);
+}
+
+/*no flexbox tem tag pro pai e pro filho*/
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-nav-item {
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    display: block;
+    padding: .5rem;
+}
+
+.menu-hamburger:hover {
+    cursor: pointer;
+}
+
+.conteudo {
+    border-top: 0.4px solid #ffffff;
+    margin-bottom: 48px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 6.4rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+iframe {
+    margin-bottom: 48px;
+    width: 560px;
+    height: 315px;
+}
+
+.conteudo-principal-escrito-link {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    width: 185px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    align-items: center;
+    padding: 15px;
+}
+
+.conteudo-principal-escrito-link:hover, .link-fixed:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.imagem-para-768px {
+    display: none;
+}
+
+.link-fixed {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    margin: 5%;
+    cursor: pointer;
+}
+
+.rodape {
+    border-top: 0.4px solid rgb(255, 255, 255);
+    height: 100%;
+    position: relative;
+}
+
+.rodape-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodape-Contato-titulo, .rodape-redes-sociais-titulo {
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.rodape-paragrafo, .rodape-redes-sociais-imagem, a {
+    color: white;
+    font-family: 'Sarala', sans-serif;
+}
+
+/*media*/
+
+@media (max-width: 1080px) {
+    .conteudo-principal-escrito {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media (max-width: 615px) {
+    iframe {
+        width: 500px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .cabecalho-nav {
+        display: none;
+    }
+
+    .um, .dois, .tres {
+        background-color: white;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-hamburger {
+        width: 40px;
+        height: 30px;
+    }
+
+    /*Fullscreen*/
+
+    .cabecalho.on .menu-hamburger {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .cabecalho.on .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #333;
+        z-index: 10;
+        display: block;
+    }
+
+    .cabecalho.on nav {
+        display: block;
+    }
+
+    .cabecalho.on .menu-hamburger .um {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .cabecalho.on .menu-hamburger .dois {
+        opacity: 0;
+    }
+    
+    .cabecalho.on .menu-hamburger .tres {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .cabecalho.on a {
+        text-align: center;
+        display: block;
+        line-height: 4rem;
+        transition-duration: 0.5s;
+        padding-top: 50px;
+    }
+
+    /*iframe*/
+
+    iframe {
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    iframe {
+        width: 300px;
+    }
+}
+
+@media (max-width: 390px) {
+    .rodape-container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito-link {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 345px) {
+    iframe {
+        width: 250px;
+    }
+}
